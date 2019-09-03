@@ -1,19 +1,19 @@
-°²×°Ö®Ç°×¼±¸
-1¡¢ÒÀÀµ gcc openssl-devel pcre-devel zlib-devel
-	°²×°£ºyum install gcc openssl-devel pcre-devel zlib-devel -y
+å®‰è£…ä¹‹å‰å‡†å¤‡
+1ã€ä¾èµ– gcc openssl-devel pcre-devel zlib-devel
+	å®‰è£…ï¼šyum install gcc openssl-devel pcre-devel zlib-devel -y
 
-°²×°Nginx
+å®‰è£…Nginx
 ./configure 
 
 make && make install
 
-Ä¬ÈÏ°²×°Ä¿Â¼£º
+é»˜è®¤å®‰è£…ç›®å½•ï¼š
 /usr/local/nginx
 
 
-ÅäÖÃNginxÎªÏµÍ³·şÎñ£¬ÒÔ·½±ã¹ÜÀí
-  1¡¢ÔÚ/etc/rc.d/init.d/Ä¿Â¼ÖĞ½¨Á¢ÎÄ±¾ÎÄ¼şnginx
-  2¡¢ÔÚÎÄ¼şÖĞÕ³ÌùÏÂÃæµÄÄÚÈİ£º
+é…ç½®Nginxä¸ºç³»ç»ŸæœåŠ¡ï¼Œä»¥æ–¹ä¾¿ç®¡ç†
+  1ã€åœ¨/etc/rc.d/init.d/ç›®å½•ä¸­å»ºç«‹æ–‡æœ¬æ–‡ä»¶nginx
+  2ã€åœ¨æ–‡ä»¶ä¸­ç²˜è´´ä¸‹é¢çš„å†…å®¹ï¼š
 #!/bin/sh
 #
 # nginx - this script starts and stops the nginx daemon
@@ -141,12 +141,14 @@ case "$1" in
         exit 2
 esac
 
-3¡¢ĞŞ¸ÄnginxÎÄ¼şµÄÖ´ĞĞÈ¨ÏŞ
+3ã€ä¿®æ”¹nginxæ–‡ä»¶çš„æ‰§è¡Œæƒé™
 	chmod +x nginx
-4¡¢Ìí¼Ó¸ÃÎÄ¼şµ½ÏµÍ³·şÎñÖĞÈ¥
+4ã€æ·»åŠ è¯¥æ–‡ä»¶åˆ°ç³»ç»ŸæœåŠ¡ä¸­å»
 	chkconfig --add nginx
-	²é¿´ÊÇ·ñÌí¼Ó³É¹¦
+	æŸ¥çœ‹æ˜¯å¦æ·»åŠ æˆåŠŸ
 	chkconfig --list nginx
 
-Æô¶¯£¬Í£Ö¹£¬ÖØĞÂ×°ÔØ
+å¯åŠ¨ï¼Œåœæ­¢ï¼Œé‡æ–°è£…è½½
 service nginx start|stop
+å¼€æœºè‡ªå¯
+chkconfig nginx on
